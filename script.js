@@ -39,3 +39,28 @@ function changeBackground() {
   // document.getElementById('title').classList.add('animate');
   document.documentElement.style.backgroundImage = backgrounds[Math.floor(Math.random() * 5)];
 }
+
+function displayTime() {
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    var ampm = "AM";
+    if(hours >= 12) {
+      hours = hours - 12;
+      ampm = "PM";
+    }
+    if(hours === 0) {
+      hours = 12;
+    }
+    if (minutes < 10) {
+      minutes = "0" + minutes;
+    }
+    $("#time").text(hours + ":" + minutes + " " + ampm);
+    $("#time").dialog({
+      modal: true,
+      title: "Current Time",
+      width: 300,
+      height: 100
+    }
+  )
+}
