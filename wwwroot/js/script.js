@@ -56,15 +56,8 @@ function randomPage() {
         type: "GET",
     })
         .done(function (data) {
-            page = data.webPages;
-            console.log(page)
-            /* len = data.webPages.value.length;
-            for (i = 0; i < len; i++) {
-                results += "<p><a href='" + data.webPages.value[i].url + "'>" + data.webPages.value[i].name + "</a>: " + data.webPages.value[i].snippet + "</p>";
-            }
-
-            $('#searchResults').html(results);
-            $('#searchResults').dialog(); */
+            page = data.webPages.value[0].displayUrl;
+            window.location.href = page;
         })
         .fail(function () {
             alert("error");
