@@ -30,7 +30,7 @@
 - CSS:
   - [x] Set the background of the page to an image of your choice. ([Unsplash](unsplash.com) is a great resource for free images)
   - [x] Set the visibility of the 'searchResults' and 'time' divs to hidden.
-  - [ ] Style the rest of the page however you see fit. points will be lost if little or no effort is given in styling your site.
+  - [x] Style the rest of the page however you see fit. points will be lost if little or no effort is given in styling your site.
 - JS:
   - [x] Replace 'my-api-url' under the ajax call with the url from your search API.
   - [x] Replace 'my-api-key' next to 'Ocp-Apim-Subscription-Key' with the api key from your search API.
